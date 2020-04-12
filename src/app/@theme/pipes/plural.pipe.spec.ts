@@ -6,10 +6,10 @@ describe('PluralPipe', () => {
     const pipe = new PluralPipe();
     expect(pipe).toBeTruthy();
   });
-    
+
   it('should return the plural word of "house"', () => {
     const pipe = new PluralPipe();
-    let transformedValue = pipe.transform(2, "house");
+    const transformedValue = pipe.transform(2, 'house');
     expect(transformedValue).toEqual('2 houses');
   });
 });

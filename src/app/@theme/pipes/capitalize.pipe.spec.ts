@@ -9,7 +9,7 @@ describe('CapitalizePipe', () => {
 
   it('should return capitalized string. From "anna" to "Anna"', () => {
     const pipe = new CapitalizePipe();
-    let transformedValue = pipe.transform("anna");
+    const transformedValue = pipe.transform('anna');
     expect(transformedValue).toEqual('Anna');
   });
 
