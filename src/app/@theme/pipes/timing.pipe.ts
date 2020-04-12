@@ -12,7 +12,7 @@ export class TimingPipe implements PipeTransform {
     return '00:00';
   }
 
-  private initZero(time: number): string {
+  initZero(time: number): string {
     return time < 10 ? '0' : '';
   }
 }
