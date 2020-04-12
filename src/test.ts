@@ -1,17 +1,14 @@
-/**
- * @license
- * Copyright Akveo. All Rights Reserved.
- * Licensed under the MIT License. See License.txt in the project root for license information.
- */
-
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
+// An environment to run angular tests is being created
 import 'zone.js/dist/long-stack-trace-zone';
 import 'zone.js/dist/proxy.js';
 import 'zone.js/dist/sync-test';
 import 'zone.js/dist/jasmine-patch';
 import 'zone.js/dist/async-test';
 import 'zone.js/dist/fake-async-test';
+
+// TestBed is a powerful unit testing tool provided by angular, and it is initialized in this file.
 import { getTestBed } from '@angular/core/testing';
 import {
   BrowserDynamicTestingModule,
@@ -30,9 +27,13 @@ getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting(),
 );
-// Then we find all the tests.
+
+// Then karma loads all the test files of the application matching their names against a regular expression.
+// All files inside our app folder that has “spec.ts” on its name are considered a test.
 const context = require.context('./', true, /\.spec\.ts$/);
+
 // And load the modules.
 context.keys().map(context);
+
 // Finally, start Karma to run the tests.
 __karma__.start();
