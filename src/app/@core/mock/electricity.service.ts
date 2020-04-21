@@ -79,6 +79,10 @@ export class ElectricityService extends ElectricityData {
 
   constructor() {
     super();
+    this.setChartData();
+  }
+
+  setChartData() {
     this.chartData = this.chartPoints.map((p, index) => ({
       label: (index % 5 === 3) ? `${Math.round(index / 5)}` : '',
       value: p,
