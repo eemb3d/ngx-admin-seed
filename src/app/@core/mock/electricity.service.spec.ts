@@ -22,7 +22,7 @@ describe('ElectricityService', () => {
           expect(Object.keys(value).length).toBeGreaterThanOrEqual(3);
           done();
         },
-        error => console.error(error)
+        error => console.error(error),
       );
     });
 
@@ -33,7 +33,7 @@ describe('ElectricityService', () => {
           expect(value[0]).toEqual({ label: '', value: 490 });
           done();
         },
-        error => console.error(error)
+        error => console.error(error),
       );
     });
 });

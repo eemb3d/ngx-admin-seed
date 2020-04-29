@@ -18,7 +18,7 @@ describe('TemperatureHumidityService', () => {
           });
           done();
         },
-        error => console.error(error)
+        error => console.error(error),
       );
     });
 
@@ -33,7 +33,7 @@ describe('TemperatureHumidityService', () => {
           });
           done();
         },
-        error => console.error(error)
+        error => console.error(error),
       );
     });
 });

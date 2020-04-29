@@ -9,7 +9,7 @@ declare const ga: any;
 export class AnalyticsService {
   private enabled: boolean;
 
-  //Location: A service that applications can use to interact with a browser's URL
+  // Location: A service that applications can use to interact with a browser's URL
   constructor(private location: Location, private router: Router) {
     this.enabled = false;
   }

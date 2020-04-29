@@ -8,10 +8,10 @@ describe('AnalyticsService', () => {
 
   beforeEach(() => TestBed.configureTestingModule({
     imports: [RouterTestingModule],
-    providers: [AnalyticsService, Location]
+    providers: [AnalyticsService, Location],
   }));
 
- /* 
+ /*
  it('should do something TBD', () => {
     const service: AnalyticsService = TestBed.inject(AnalyticsService);
     expect(service.trackPageViews()).toBeDefined();

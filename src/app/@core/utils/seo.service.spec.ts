@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NB_DOCUMENT } from '@nebular/theme';
 
@@ -11,8 +11,8 @@ describe('SeoService', () => {
     imports: [RouterTestingModule, HttpClientTestingModule],
     providers: [
       SeoService,
-      { provide: NB_DOCUMENT }
-    ]
+      { provide: NB_DOCUMENT },
+    ],
   }));
 
 /*   it('should be created', () => {
