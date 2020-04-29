@@ -7,7 +7,7 @@ describe('LayoutService', () => {
     expect(service).toBeTruthy();
   });
 
-/* 
+/*
   it('should be created', () => {
     expect(service.changeLayoutSize()).toBeTruthy();
   });
@@ -15,5 +15,5 @@ describe('LayoutService', () => {
   it('should be created', () => {
     expect(service.onChangeLayoutSize()).toBeTruthy();
   });
-*/ 
+*/
 });
